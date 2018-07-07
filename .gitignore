@@ -130,3 +130,8 @@ venv.bak/
 .swp
 .~
 .directory
+
+# grabber
+grabber/configFileTemplate.cfg
+
+
