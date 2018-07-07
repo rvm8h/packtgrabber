@@ -1,3 +1,4 @@
+NOTE: SINCE PACKT PUBLISHING HAS INSTALLED A RECAPTCHA IN ITS WEB PAGE MANY COMMANDS BELOW FAILED TO WORK 
 ## Free Learning PacktPublishing script
 
 **packtPublishingFreeEbook.py** - script that automatically grabs and download a daily free eBook from https://www.packtpub.com/packt/offers/free-learning
