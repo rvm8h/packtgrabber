@@ -1,1 +1,1 @@
-30 5  * * *  /home/hme/dev/packtgrabber/getbook.sh 
+30 * * * *  /home/centos/projects/packtgrabber/grabber/getbook.sh >> /home/centos/log/packt.log 2>&1 
