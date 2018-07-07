@@ -21,6 +21,7 @@ __email__ = "lukasz.uszko@gmail.com, daniel@vandorp.biz"
 
 import sys
 import time
+from tinynetrc import Netrc
 
 PY2 = sys.version_info[0] == 2
 if PY2:
@@ -80,8 +81,11 @@ class PacktAccountData(object):
 
     def __getLoginData(self):
         """Gets user login credentials."""
-        email = self.configuration.get("LOGIN_DATA", 'email')
-        password = self.configuration.get("LOGIN_DATA", 'password')
+        #email = self.configuration.get("LOGIN_DATA", 'email')
+        #password = self.configuration.get("LOGIN_DATA", 'password')
+        netrc = Netrc()
+        email = netrc['localhost']['login']
+        password = netrc['localhost']['password']
         return email, password
 
     def __getDownloadData(self):

@@ -132,6 +132,6 @@ venv.bak/
 .directory
 
 # grabber
-grabber/configFileTemplate.cfg
+grabber/private
 
 

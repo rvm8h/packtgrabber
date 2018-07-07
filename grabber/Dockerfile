@@ -10,7 +10,9 @@ RUN mkdir -p /home/hme/
 COPY requirements.txt /
 RUN pip3 install -r /requirements.txt
 COPY packtPublishingFreeEbook.py /
-COPY configFile.cfg /
+COPY private/.netrc /root
+COPY configFile.cfg / 
+RUN mkdir /opt/library
 ADD utils /utils
 
 #ENTRYPOINT ["python3","packtPublishingFreeEbook.py","-gd", "-cfg", "."]
