@@ -1,3 +1,4 @@
 #!/bin/sh
-/usr/bin/docker rm `/usr/bin/docker  ps -aq`
-/usr/bin/docker  run -v /home/hme/Drive/Library/PacktGrabber:/home/hme  packtgrabber 
+/usr/bin/docker stop mybook 
+/usr/bin/docker rm -f mybook
+/usr/bin/docker run -v /home/centos/library:/opt/library --name mybook  packtgrabber 
