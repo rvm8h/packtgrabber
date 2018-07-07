@@ -1,4 +1,4 @@
-FROM fedora:23
+FROM fedora
 
 RUN dnf -y update \
     && dnf -y install git python-pip \
